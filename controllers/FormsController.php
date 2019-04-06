@@ -30,12 +30,12 @@ class FormsController{
         }
 
         if (!$mail) {
-            Session::addFlash('errors', "Vous devez vous décrire avant de soumettre le formulaire.");
+            Session::addFlash('errors', "Vous devez renseigner votre email avant de soumettre le formulaire.");
             Http::redirectBack();
         }
 
         if (!$description) {
-            Session::addFlash('errors', "Vous devez renseigner votre email avant de soumettre le formulaire.");
+            Session::addFlash('errors', "Vous devez vous décrire avant de soumettre le formulaire.");
             Http::redirectBack();
         }
 
