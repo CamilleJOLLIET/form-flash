@@ -1,0 +1,488 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/********************************
+* 
+*
+*
+*			FIN DU RESET
+*
+*
+*                                                                                                                                                            
+*/
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Pacifico");
+
+/* font-family: 'Lobster Two',
+cursive;
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Biryani',
+sans-serif; */
+
+header {
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  height: 15vh;
+  padding: 0 20%;
+  background-color: #1f202f;
+}
+
+nav {
+  margin-top: 1%;
+}
+
+nav a {
+  color: #d6dbd6;
+  text-decoration: none;
+  margin: 0 1%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4vw;
+}
+
+nav h1 {
+  display: inline-block;
+  font-family: "Lobster Two", cursive;
+  font-size: 3.2vw;
+  padding: 2.5%;
+}
+
+div.container {
+  width: 70%;
+  margin: auto;
+}
+
+main {
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin: 20vh auto auto auto;
+  text-align: center;
+}
+
+.mine {
+  background-color: #ecefed;
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 0 0 50px 0;
+}
+
+.mine h2,
+.article h2 {
+  color: #252b38;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.article h2 {
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+i.fas.fa-hamburger {
+  display: block;
+}
+
+.mine form button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border: none;
+  color: none;
+  background-color: #ecefed;
+  color: #252b38;
+  font-size: 6rem;
+}
+
+.mine form textarea {
+  max-width: 90%;
+  min-width: 90%;
+  width: 90%;
+  max-height: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Biryani", sans-serif;
+}
+
+.status img,
+.comments img {
+  position: absolute;
+  width: 120px;
+  border-radius: 50%;
+  margin: 10px;
+  left: -50px;
+  border: 3px solid rgb(252, 161, 24);
+}
+
+.article {
+  position: relative;
+}
+
+.status,
+.comments {
+  border: 3px solid #1f202f;
+  background-color: #1f202f;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px 0 40px 10%;
+}
+
+.status a {
+  text-decoration: none;
+  color: rgb(252, 161, 24);
+}
+
+.status h5 a {
+  display: block;
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+.status textarea {
+  max-width: 90%;
+  min-width: 90%;
+  width: 90%;
+  max-height: 50px;
+  min-height: 50px;
+  padding: 5px 0 0 10px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.comments form button,
+.status a i {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border: none;
+  color: none;
+  background-color: #1f202f;
+  color: #ecefed;
+  font-size: 6rem;
+}
+
+.status a i {
+  margin-top: 40px;
+}
+
+.comments textarea {
+  float: left;
+  max-width: 90%;
+  min-width: 90%;
+  width: 90%;
+  max-height: 50px;
+  min-height: 50px;
+  padding: 5px 0 0 10px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+}
+
+.comments h5 {
+  text-align: left;
+  width: 97%;
+}
+
+h3,
+span,
+h5 {
+  font-family: "Biryani", sans-serif;
+  text-align: left;
+  margin: 0 0 15px 0;
+}
+
+h5 {
+  text-align: center;
+}
+
+h3 {
+  width: 97%;
+  color: rgb(252, 161, 24);
+  margin: 40px 0 20px 0;
+  font-size: 2.2rem;
+  border-bottom: 2px solid #252b38;
+}
+
+span {
+  margin-left: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0 0 0 20px;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Biryani", sans-serif;
+  text-align: left;
+}
+
+.comments h5 {
+  border-top: 2px solid #252b38;
+  margin: 20px 0 20px 0;
+  padding: 30px 0 0 0;
+  color: white;
+}
+
+.formlogin {
+  width: 70%;
+  margin: auto;
+  background-color: #1f202f;
+  border-radius: 10px;
+  text-align: left;
+  color: #d6dbd6;
+  font-size: 1.6rem;
+  font-family: "Biryani", sans-serif;
+}
+
+.formlogin form {
+  padding: 20px;
+}
+
+.formlogin div {
+  width: 60%;
+  margin: auto;
+}
+
+.formlogin input {
+  margin: 10px;
+  width: 200px;
+  height: 25px;
+}
+
+.formlogin textarea {
+  max-width: 90%;
+  min-width: 90%;
+  width: 90%;
+  max-height: 50px;
+  min-height: 50px;
+  padding: 5px 0 0 10px;
+  border-radius: 10px;
+  font-family: "Raleway",
+    sans-serif;
+}
+
+.formLogin h2 {
+  text-align: left;
+}
+
+div.errors {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #801212;
+  border-radius: 10px;
+  text-align: right;
+  color: #d6dbd6;
+  font-size: 1.6rem;
+  font-family: "Biryani", sans-serif;
+}
+
+div.success {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1b8012;
+  border-radius: 10px;
+  text-align: right;
+  color: #d6dbd6;
+  font-size: 1.6rem;
+  font-family: "Biryani", sans-serif;
+}
+
+div.errors p,
+div.success p {
+  margin: 5px 0 5px 0;
+}
+
+.comments img:nth-child(even) {
+  left: 815px;
+}
+
+.comments p {
+  background-color: #ecefed;
+  color: #1f202f;
+  padding: 5%;
+  border-radius: 10px;
+  width: 87%;
+}
+
+.comments h3:nth-child(odd) {
+  padding-right: 55px;
+  text-align: right;
+}
+
+.comments h3:nth-child(odd) a i.fas.fa-pen-alt,
+.comments h3:nth-child(odd) a i.fas.fa-trash-alt {
+  float: left;
+}
+
+.comments p:nth-child(even) {
+  padding-right: 90px;
+  text-align: right;
+}
+
+.article .status a i.fas.fa-pen-alt,
+.article .status a i.fas.fa-trash-alt,
+.article .comments a i.fas.fa-pen-alt,
+.article .comments a i.fas.fa-trash-alt {
+  display: inline;
+  float: right;
+  text-align: right;
+  color: white;
+  margin: 0 10px;
+  font-size: 1.3rem;
+}

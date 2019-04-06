@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flashes pour formulaires</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Biryani|Lobster+Two|Raleway');
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.php">
+                <h1>Flashes pour formulaires</h1>
+            </a>
+    </header>
+
+    <main>
+        <div class="container">
+            <?php if(Session::hasFlashes('errors')): ?>
+            <div class="errors">
+                <?php foreach(Session::getFlashes('errors') as $message): ?>
+                <p>
+                    <?= $message ?>
+                </p>
+                <?php endforeach; ?>
+            </div>
+            <?php endif; ?>
+            <?php if(Session::hasFlashes('success')): ?>
+            <div class="success">
+                <?php foreach(Session::getFlashes('success') as $message): ?>
+                <p>
+                    <?= $message ?>
+                </p>
+                <?php endforeach; ?>
+            </div>
+            <?php endif; ?>
+
+
+            <div class="container">
+                <section class="mine">
+                    <h2>Formulaire de test</h2>
+                    <form action="form-control.php" method="post">
+                        <input type="text" name="firstname" placeholder="Prénom">
+                        <input type="text" name="lastname" placeholder="Nom">
+                        <input type="text" name="mail" placeholder="Email">
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+                        <button type="submit">Tester</button>
+                    </form>
+                </section>
+</div>
+</div>
+</main>
+</body>
+
+</html>
